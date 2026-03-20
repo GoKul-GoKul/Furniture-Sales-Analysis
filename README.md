@@ -1,4 +1,5 @@
 📊 BCG Furniture Sales & Profitability Analysis
+
 📝 Project Brief
 The Furniture Sales Analysis Dashboard is an end-to-end Business Intelligence solution designed to track, analyze, and optimize sales performance across various regions and product categories. Sourced from flat-file data, this project transforms raw transactional records into an interactive diagnostic tool that identifies revenue drivers, isolates areas of financial loss, and provides a clear view of order fulfillment and profit margins.
 
