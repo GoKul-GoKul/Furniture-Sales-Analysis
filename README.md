@@ -22,7 +22,7 @@ This dashboard transitions teams from manual spreadsheet reporting to automated,
 The report is designed with a logical flow, guiding the user from a macro-overview down to granular diagnostics.
 
 1. **Executive Summary (The Command Center):** Provides a high-level snapshot of business health. Houses core KPI cards (Revenue, Profit, Loss, Total Orders) alongside overarching trend lines. Designed to answer "How are we doing right now?" within 5 seconds.
-2. **Regional & Category Diagnostics (The Drill-Down):** Breaks down high-level metrics by Geography and Product Segment. Utilizes matrix visuals and clustered bar charts for cross-filtering (e.g., clicking the 'West' region to reveal the exact profit margins of Bookcases in that area).
+2. **Regional & Category Diagnostics (The Drill-Down):** Breaks down high-level metrics by Geography and Product Segment. Utilizes matrix visuals and clustered bar charts for cross-filtering, paired with an interactive, toggleable slicer panel built using bookmarks to save screen real estate.
 3. **DAX & Measure Dictionary (For Technical Review):** A dedicated view showcasing the complex measure logic driving the dashboard, demonstrating my ability to write optimized DAX code for enterprise scenarios.
 
 ## 🧮 Advanced DAX Engine (Technical Showcase)
@@ -31,12 +31,13 @@ This project moves beyond simple drag-and-drop aggregations, powered by a robust
 * **Dynamic Profitability Tracking:** Utilized variables (`VAR` and `RETURN`) within measures to cleanly isolate profitable transactions from loss-making ones. This logic responds instantly to slicer context using `SUMX` and `FILTER` iterations.
 * **Dynamic Ranking:** Employed `RANKX` combined with `ALLSELECTED` to dynamically rank the Top N and Bottom N furniture sub-categories based on user-selected parameters.
 
-# 🎨 UI/UX Design Philosophy
+## 🎨 UI/UX Design Philosophy
 Approaching dashboard design with the rigor of a Senior Design Lead (incorporating 10+ years of design principle best practices), I adhered strictly to enterprise UI/UX standards:
-1. **Maximized Data-to-Ink Ratio:** Eliminated heavy borders, unnecessary gridlines, and distracting 3D effects. Every pixel serves a communicative purpose.
-2. **Z-Pattern Visual Hierarchy:** Structured for natural reading patterns (top-left to bottom-right). Crucial KPIs sit top-left, historical trends in the middle, and granular matrices bottom-right.
-3. **Gestalt Principles of Proximity:** Grouped related visuals closely together with subtle background shading so the user's brain perceives them as a single analytical unit.
-4. **Accessible Palettes:** Used a muted, professional corporate color scheme. High-contrast colors (like Red) are exclusively reserved for 'Loss' or negative metrics to ensure immediate cognitive recognition without overwhelming the user.
+1. **App-Like Interactivity & Bookmarking:** Beyond static visuals, I leverage advanced bookmarking, selection panes, and interactive page navigation to create a fluid, app-like user experience. This allows users to intuitively slice data and switch views without feeling overwhelmed by a cluttered interface.
+2. **Maximized Data-to-Ink Ratio:** Eliminated heavy borders, unnecessary gridlines, and distracting 3D effects. Every pixel serves a communicative purpose.
+3. **Z-Pattern Visual Hierarchy:** Structured for natural reading patterns (top-left to bottom-right). Crucial KPIs sit top-left, historical trends in the middle, and granular matrices bottom-right.
+4. **Gestalt Principles of Proximity:** Grouped related visuals closely together with subtle background shading so the user's brain perceives them as a single analytical unit.
+5. **Accessible Palettes:** Used a muted, professional corporate color scheme. High-contrast colors (like Red) are exclusively reserved for 'Loss' or negative metrics to ensure immediate cognitive recognition.
 
 ---
-*Feel free to explore the `.pbix` file included in this repository to see the data model and DAX measures in action!*
+*Feel free to explore the `.pbix` file included in this repository to see the data model, interactive bookmarks, and DAX measures in action!*
